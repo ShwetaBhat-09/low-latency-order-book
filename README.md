@@ -29,7 +29,7 @@ A high-performance limit order book matching engine in C++17. Implements price-t
 
 ## Performance
 
-Benchmarked on Apple M1 (single-threaded):
+Benchmarked measured (single-threaded):
 
 ```
 ═══════════════════════════════════════════════════
@@ -118,17 +118,11 @@ auto depth = book.get_bids(5); // top 5 price levels
 ## Project Structure
 
 ```
-orderbook/
+low-latency-order-book/
 ├── include/
-│   ├── order.h          # Order, Trade structs, comparators
-│   ├── memory_pool.h    # Object pool (zero-alloc on hot path)
-│   └── orderbook.h      # Core matching engine
 ├── src/
-│   └── main.cpp         # Interactive demo
 ├── tests/
-│   └── test_orderbook.cpp  # 10 unit tests
 ├── bench/
-│   └── benchmark.cpp    # Latency benchmarks
 ├── Makefile
 └── README.md
 ```
