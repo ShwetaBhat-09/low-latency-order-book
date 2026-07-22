@@ -71,8 +71,8 @@ Benchmarked on Apple M1 (single-threaded):
 # macOS: xcode-select --install (or brew install gcc)
 # Linux: sudo apt install g++
 
-git clone https://github.com/ShwetaBhat-09/orderbook.git
-cd orderbook
+git clone https://github.com/ShwetaBhat-09/low-latency-order-book.git
+cd low-latency-order-book
 
 # Run tests
 make test
